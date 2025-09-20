@@ -40,11 +40,11 @@ A Python tool that automatically optimizes your resume for specific job descript
 
 ## Usage
 
-### Basic Workflow (uses default files):
+### Basic Workflow (uses sample files):
 ```bash
-python optimizer.py
-python exporter_md2html.py
-python exporter_html2pdf.py
+python optimizer.py --resume "./resumes/my_resume.md" --description "./job_descriptions/jd_1.txt" --output "./resumes/jd_1_resume.md"
+python exporter_md2html.py --input "./resumes/jd_1_resume.md" --output "./HTMLs/resume_1_html.html"
+python exporter_html2pdf.py --input "./HTMLs/resume_1_html.html" --output "./PDFs/resume_1_pdf.pdf"
 ```
 
 ### Custom Files:
